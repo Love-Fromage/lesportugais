@@ -17,7 +17,7 @@ const Hero = () => {
 						<p>comme si c'était</p>
 						<p>pour nous!</p>
 					</h1>
-					<a href="" className="devis-link">
+					<a href="#" className="devis-link">
 						Devis gratuit
 					</a>
 				</div>
