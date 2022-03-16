@@ -290,12 +290,15 @@ const Header = () => {
 						<li>
 							<a href="#">Accueil</a>{" "}
 						</li>
+						<li className="ligne"></li>
 						<li>
 							<a href="#">Expertises</a>
 						</li>
+						<li className="ligne"></li>
 						<li>
 							<a href="#">Réalisations</a>
 						</li>
+						<li className="ligne"></li>
 						<li>
 							<a href="#">Contact</a>
 						</li>
