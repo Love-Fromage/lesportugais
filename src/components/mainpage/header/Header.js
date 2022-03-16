@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import "../scss/Header.scss";
+import "../../scss/Header.scss";
+import "../../scss/Hamburger.scss";
+//import Hamburger from "./Hamburger";
 //import MediaQuery from "react-responsive/dist/Component";
 import { useMediaQuery } from "react-responsive";
 
@@ -12,10 +14,29 @@ const Header = () => {
 	});
 
 	//const isBigScreen = useMediaQuery({ query: "(min-width: 1824px)" });
-	// let toggleMenu = false;
+
 	const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
 	//const isPortrait = useMediaQuery({ query: "(orientation: portrait)" });
 	//   const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' });
+
+	const hamburgerIcon = (
+		<div className="cont-ham" onClick={() => setToggleMenu(!toggleMenu)}>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	);
+
+	const closeIcon = (
+		<div
+			className="cont-ham ham-clicked"
+			onClick={() => setToggleMenu(!toggleMenu)}
+		>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	);
 
 	return (
 		<nav>
@@ -259,23 +280,25 @@ const Header = () => {
 							</g>
 						</svg>
 					</div>
-					<div
-						className="cont-ham"
-						onClick={() => setToggleMenu(true)}
-					>
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
+					{toggleMenu ? closeIcon : hamburgerIcon}
 				</>
 			)}
+
 			{toggleMenu && (
 				<div className="menu-ham">
 					<ul>
-						<li>Accueil</li>
-						<li>Expertises</li>
-						<li>Réalisations</li>
-						<li>Contact</li>
+						<li>
+							<a href="#">Accueil</a>{" "}
+						</li>
+						<li>
+							<a href="#">Expertises</a>
+						</li>
+						<li>
+							<a href="#">Réalisations</a>
+						</li>
+						<li>
+							<a href="#">Contact</a>
+						</li>
 					</ul>
 				</div>
 			)}
