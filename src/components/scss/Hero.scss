@@ -1,0 +1,61 @@
+@import "./scss-variables";
+
+.chapeau {
+	height: 10vh;
+}
+
+.hero {
+	position: relative;
+	//padding-top: 10vh;
+	height: 50vh;
+	background-position: 50%;
+	// background-color: rgba(34, 34, 34, 0.253);
+	background-image: url("https://static.wixstatic.com/media/3a257b_bf446c64781447aa9d18bc8e8e317d6f~mv2.jpeg/v1/fill/w_640,h_700,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3a257b_bf446c64781447aa9d18bc8e8e317d6f~mv2.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	.cont-text-hero {
+		display: flex;
+		flex-direction: column;
+		background-color: rgba(34, 34, 34, 0.253);
+		h1 {
+			margin: 0;
+			font-family: roboto, roboto-bold, sans-serif;
+
+			&:first-child {
+				margin-top: 50px;
+				line-height: 13px;
+				margin-bottom: 50px;
+				span {
+					font-size: 13px;
+					color: $rouge-nav;
+					background-color: #fff;
+					text-transform: uppercase;
+					padding: 0 5px;
+					letter-spacing: 4px;
+				}
+			}
+			&:nth-child(2) {
+				color: #fff;
+				text-transform: uppercase;
+
+				line-height: 0.8em;
+
+				p {
+					margin: 0;
+				}
+				p:nth-child(1) {
+					font-size: 20px;
+				}
+				p:nth-child(2) {
+					font-size: 26px;
+				}
+				p:nth-child(3) {
+					font-size: 20px;
+				}
+				p:nth-child(4) {
+					font-size: 25px;
+				}
+			}
+		}
+	}
+}
