@@ -18,70 +18,66 @@ const LeCarouselle = () => {
 	// let pos = 0;
 	const speed = 2000;
 
-	useEffect(() => {
-		const interval = setInterval(() => {
-			//console.log("This will run every second!");
-			nextSlide();
-		}, 1000);
-	}, []);
-
-	const nextSlide = () => {
-		//code pour faire l'animation!
-		setPosition("translate-to-right");
-	};
-
 	return (
 		<div>
 			{isTabletOrMobile && (
 				<div>
 					<div className="cont-slider-m">
 						<Carousel controls={false}>
-							<Carousel.Item interval={speed}>
+							<Carousel.Item>
 								<img
 									className="d-block w-100 img-R"
 									src="https://www.colorhexa.com/303030.png"
 									alt="First slide"
 								/>
 								<Carousel.Caption>
-									<p>
+									<p className="p-first" id="premier-slide">
 										"Paysagiste Les Portugaisare a very good
 										company. The service is excellent, when
 										you need a service they are there for
 										you."
 									</p>
 									<h2>Dmitry Drachyov</h2>
-									<p>
-										Nulla vitae elit libero, a pharetra
-										augue mollis interdum.
-									</p>
+									<p>Portes de l'europe à Longueuil</p>
 								</Carousel.Caption>
 							</Carousel.Item>
-							<Carousel.Item interval={speed}>
+							<Carousel.Item>
 								<img
 									className="d-block w-100 img-R"
 									src="https://www.colorhexa.com/303030.png"
 									alt="First slide"
 								/>
 								<Carousel.Caption>
-									<h3>Second slide label</h3>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur
-										adipiscing elit.
+									<p className="p-first p-2">
+										"Nous avons eu d'excellents commentaires
+										suite aux ménage du terrain fait hier.
+										Une résidente de longue date a dit que
+										c'étais le plus beau ménage de printemps
+										qu'elle a vu depuis 12 ans."
 									</p>
+									<h2>Catherine-Amélie Côté</h2>
+									<p>Boucherville</p>
 								</Carousel.Caption>
 							</Carousel.Item>
-							<Carousel.Item interval={speed}>
+							<Carousel.Item>
 								<img
 									className="d-block w-100 img-R"
 									src="https://www.colorhexa.com/303030.png"
 									alt="First slide"
 								/>
 								<Carousel.Caption>
-									<h3>Third slide label</h3>
-									<p>
-										Praesent commodo cursus magna, vel
-										scelerisque nisl consectetur.
+									<p className="p-first para-3">
+										"Depuis que nous avons retenus les
+										services de Paysagiste Les Portugais il
+										y a maintenant 5 ans, nous faisons
+										l'envie de nos voisins. Son équipe a un
+										soucis du détail exceptionnel et
+										l'allure de notre entrée et de notre
+										cours en témoigne à chaque coup d’œil.{" "}
+										<br /> Merci beaucoup à Paysagiste Les
+										Portugais."
 									</p>
+									<h2>Pierre E. Jean-Felix</h2>
 								</Carousel.Caption>
 							</Carousel.Item>
 						</Carousel>

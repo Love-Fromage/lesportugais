@@ -1,11 +1,28 @@
 @import "./scss-variables";
 
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
 //version mobile
 // $enable-grid-classes: false;
+.carousel-caption {
+	bottom: 0;
+	h2 {
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+}
+
+$carousel-caption-width: 100%;
 
 .img-R {
 	width: 90vw;
-	height: 300px;
+	height: inherit;
+}
+#premier-slide {
+	margin-top: -140px;
+}
+.p-first {
+	//margin-top: -140px;
 }
 
 .cont-slider-m {
