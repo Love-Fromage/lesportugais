@@ -24,7 +24,7 @@ const LeCarouselle = () => {
 				<div>
 					<div className="cont-slider-m">
 						<Carousel controls={false}>
-							<Carousel.Item>
+							<Carousel.Item interval={speed}>
 								<img
 									className="d-block w-100 img-R"
 									src="https://www.colorhexa.com/303030.png"
@@ -32,16 +32,16 @@ const LeCarouselle = () => {
 								/>
 								<Carousel.Caption>
 									<p className="p-first" id="premier-slide">
-										"Paysagiste Les Portugaisare a very good
-										company. The service is excellent, when
-										you need a service they are there for
-										you."
+										"Paysagiste Les Portugais <br /> are a
+										very good company. <br /> The service is
+										excellent, <br /> when you need a
+										service <br /> they are there for you."
 									</p>
 									<h2>Dmitry Drachyov</h2>
-									<p>Portes de l'europe à Longueuil</p>
+									<p>Portes de l'Europe à Longueuil</p>
 								</Carousel.Caption>
 							</Carousel.Item>
-							<Carousel.Item>
+							<Carousel.Item interval={speed}>
 								<img
 									className="d-block w-100 img-R"
 									src="https://www.colorhexa.com/303030.png"
@@ -59,7 +59,7 @@ const LeCarouselle = () => {
 									<p>Boucherville</p>
 								</Carousel.Caption>
 							</Carousel.Item>
-							<Carousel.Item>
+							<Carousel.Item interval={speed}>
 								<img
 									className="d-block w-100 img-R"
 									src="https://www.colorhexa.com/303030.png"

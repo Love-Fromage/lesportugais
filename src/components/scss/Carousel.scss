@@ -1,10 +1,9 @@
 @import "./scss-variables";
 
-@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
-
 //version mobile
 // $enable-grid-classes: false;
 .carousel-caption {
+	// top: 25%;
 	bottom: 0;
 	h2 {
 		margin-top: 50px;
@@ -12,18 +11,19 @@
 	}
 }
 
-$carousel-caption-width: 100%;
+$carousel-caption-width: 90%;
 
 .img-R {
 	width: 90vw;
 	height: inherit;
 }
 #premier-slide {
-	margin-top: -140px;
+	//margin-top: -140px;
 }
 .p-first {
 	//margin-top: -140px;
 }
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
 
 .cont-slider-m {
 	width: 90vw;
