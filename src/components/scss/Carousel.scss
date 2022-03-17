@@ -1,29 +1,100 @@
 @import "./scss-variables";
 
-.cont-slider {
-	margin: auto;
+//version mobile
+// $enable-grid-classes: false;
+
+.img-R {
 	width: 90vw;
-	height: 291px;
+	height: 300px;
+}
+
+.cont-slider-m {
+	width: 90vw;
+	margin: auto;
+	margin-top: 20px;
 	overflow: hidden;
-	.slides {
+	.slides-m {
 		display: flex;
-		width: 100vw;
-		//overflow: hidden;
-		.cont-slide {
-			width: 280px;
-			//height: 291px;
-			img {
-				width: inherit;
+		width: 3 * 90vw;
+		background-color: #303030;
+		.slide-m {
+			position: relative;
+			width: 100%;
+			color: white;
+			p {
+				width: 90%;
+				margin: 50px auto;
+				margin-bottom: 50px;
+			}
+			h2 {
+				margin-bottom: 30px;
+				color: $rouge-nav;
 			}
 		}
-	}
-	.cont-nav-carou {
-		display: flex;
-		img {
-			width: 50px;
-			&:first-child {
-				transform: rotate(180deg);
+		.cont-pagination {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			left: 50%;
+			// background-color: red;
+			display: flex;
+			div {
+				width: 10px;
+				height: 10px;
+				margin-right: 5px;
+				border-radius: 50px;
+				border: white solid 2px;
+				background-color: transparent;
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+			.activePage {
+				background-color: white;
 			}
 		}
 	}
 }
+
+// .cont-slider-m {
+// 	margin: auto;
+// 	width: 90vw;
+// 	height: 291px;
+// 	overflow: hidden;
+// 	.slides-m {
+// 		display: flex;
+// 		// justify-content: space-around;
+// 		width: 100%;
+// 		//overflow: hidden;
+// 		.cont-slide-m {
+// 			background-color: #303030;
+// 			width: 100%;
+// 			color: white;
+// 			height: 285px;
+// 			margin-top: 20px;
+// 			//padding-left: 10vw;
+// 			//margin-left: auto;
+// 			justify-content: space-around;
+// 			//height: 291px;
+// 			p {
+// 				display: inline-block;
+// 				margin-top: 20px;
+// 				width: 100%;
+// 			}
+// 			h2 {
+// 				width: inherit;
+// 			}
+// 		}
+// 	}
+// 	.cont-nav-carou-m {
+// 		display: flex;
+// 		img {
+// 			width: 50px;
+// 			&:first-child {
+// 				transform: rotate(180deg);
+// 			}
+// 		}
+// 	}
+// }
+
+//version desktop ici
