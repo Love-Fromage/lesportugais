@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import Carousel from "react-bootstrap/Carousel";
 //import from "boots"
@@ -12,9 +12,6 @@ const LeCarouselle = () => {
 	});
 	const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
 
-	const [current, setCurrent] = useState(0);
-	const [position, setPosition] = useState("slides-m");
-	const tailleSlide = "90vw";
 	// let pos = 0;
 	const speed = 2000;
 

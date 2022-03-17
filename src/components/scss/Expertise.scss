@@ -1,0 +1,34 @@
+@import "./scss-variables";
+
+.title-container {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	margin-top: 175px;
+	span {
+		position: absolute;
+	}
+}
+
+.lilNos {
+	top: 0;
+	left: 12vw;
+	text-transform: uppercase;
+	font: normal bold normal 16px/1.4em Sen, sans-serif;
+}
+.bigE {
+	top: -120px;
+	z-index: 1;
+	left: 19vw;
+	color: #549a6f;
+	font: normal bold normal 166.5px/1.4em roboto-bold, roboto, sans-serif;
+	font-size: 300px;
+}
+.title {
+	top: 10px;
+	left: 11vw;
+	z-index: 2;
+	color: #303030;
+	font: normal bold normal 60px/1.4em roboto-bold, roboto, sans-serif;
+	text-transform: uppercase;
+}
