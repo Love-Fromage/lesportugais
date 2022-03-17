@@ -78,50 +78,12 @@ const LeCarouselle = () => {
 										Portugais."
 									</p>
 									<h2>Pierre E. Jean-Felix</h2>
+									<p>Rue de Louviers à Brossard</p>
 								</Carousel.Caption>
 							</Carousel.Item>
 						</Carousel>
 					</div>
 				</div>
-
-				// <div className="cont-slider-m">
-				// 	<div className="slides-m">
-				// 		<div className="slide-m slide-1 active">
-				// 			<p>
-				// 				"Paysagiste Les Portugaisare a very good
-				// 				company. The service is excellent, when you need
-				// 				a service they are there for you."
-				// 			</p>
-				// 			<h2>Dmitry Drachyov</h2>
-				// 		</div>
-				// 		<div className="slide-m slide-2">
-				// 			<p>
-				// 				"Nous avons eu d'excellents commentaires suite
-				// 				aux ménage du terrain fait hier. Une résidente
-				// 				de longue date a dit que c'étais le plus beau
-				// 				ménage de printemps qu'elle a vu depuis 12 ans."
-				// 			</p>
-				// 			<h2>Catherine-Amélie Côté</h2>
-				// 		</div>
-				// 		<div className="slide-m slide-3">
-				// 			<p>
-				// 				"Depuis que nous avons retenus les services de
-				// 				Paysagiste Les Portugais il y a maintenant 5
-				// 				ans, nous faisons l'envie de nos voisins. Son
-				// 				équipe a un soucis du détail exceptionnel et
-				// 				l'allure de notre entrée et de notre cours en
-				// 				témoigne à chaque coup d’œil. <br /> Merci
-				// 				beaucoup à Paysagiste Les Portugais."
-				// 			</p>
-				// 			<h2>Pierre E. Jean-Felix</h2>
-				// 		</div>
-				// 		<div className="cont-pagination">
-				// 			<div className="activePage"></div>
-				// 			<div></div>
-				// 			<div></div>
-				// 		</div>
-				// 	</div>
-				// </div>
 			)}
 
 			{isDesktopOrLaptop && <div></div>}
