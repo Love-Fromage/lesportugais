@@ -1,0 +1,59 @@
+@import "./scss-variables";
+@import "sass-rem";
+
+.cont-res {
+	display: flex;
+	flex-direction: column;
+	// align-items: center;
+	// justify-items: center;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	// margin-bottom: 5550px;
+}
+.realisation {
+	// margin-left: auto;
+	// margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	// align-items: center;
+	p:first-child {
+		margin-top: 55px;
+		width: 90%;
+	}
+	.petit-point-res {
+		margin-top: 0px;
+		margin-bottom: 10px;
+		width: 75%;
+		span {
+			font-style: italic;
+			font-weight: 400;
+		}
+	}
+}
+
+.slide-m-res {
+	height: 218px;
+	margin-bottom: 50px;
+}
+.res-spacer {
+	margin-top: 390px;
+	margin-bottom: 50px;
+}
+
+.carousel-item {
+	width: 100%;
+	// height: 218px;
+	img {
+		width: 100%;
+		height: 70vh;
+	}
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+	background-color: rgba($color: #000000, $alpha: 0.4);
+	height: 150px;
+	width: 10rem;
+}
+
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";

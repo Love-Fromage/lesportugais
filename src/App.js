@@ -6,6 +6,8 @@ import Hero from "./components/mainpage/Hero";
 
 import Expertise from "./components/mainpage/Expertises";
 import DemandeDevis from "./components/mainpage/DemandeDevis";
+import Realisation from "./components/mainpage/Realisations";
+import Footer from "./components/mainpage/Footer";
 
 function App() {
 	return (
@@ -15,6 +17,8 @@ function App() {
 			<LeCarouselle />
 			<Expertise />
 			<DemandeDevis />
+			<Realisation />
+			<Footer />
 		</div>
 	);
 }
