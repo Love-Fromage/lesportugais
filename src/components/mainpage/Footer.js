@@ -1,6 +1,7 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
 import "../scss/Footer.scss";
+import logo from "../../images/e0678ef25486466ba65ef6ad47b559e1.png";
 
 import "../scss/Footer.scss";
 
@@ -35,10 +36,7 @@ const Footer = () => {
 						<h3>suivez-nous</h3>
 						<p>Restez en contact avec Paysagiste LesPortugais</p>
 						<a href="#">
-							<img
-								src="https://static.wixstatic.com/media/4057345bcf57474b96976284050c00df.png/v1/fill/w_27,h_27,al_c,usm_0.66_1.00_0.01,enc_auto/4057345bcf57474b96976284050c00df.png"
-								alt=""
-							/>
+							<img src={logo} alt="" />
 						</a>
 					</div>
 					<div className="copyright-footer">

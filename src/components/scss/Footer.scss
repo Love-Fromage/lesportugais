@@ -2,6 +2,7 @@
 @import "sass-rem";
 
 footer {
+	font-family: Sen, sans-serif;
 	background-color: $rouge-nav;
 	display: flex;
 	flex-direction: column;
@@ -23,6 +24,8 @@ footer {
 			margin-top: 20px;
 			margin-bottom: 20px;
 			a {
+				font-family: Sen, sans-serif;
+				font-weight: normal;
 				text-decoration: none;
 				color: #fff;
 			}
@@ -32,6 +35,34 @@ footer {
 		margin-top: 20px;
 		h3 {
 			text-transform: uppercase;
+		}
+		p {
+			margin: 2px 0;
+		}
+	}
+	.suivez-nous-footer {
+		h3 {
+			margin-top: 20px;
+			text-transform: uppercase;
+		}
+		p {
+			width: 70%;
+		}
+		img {
+			width: 25px;
+			height: 25px;
+		}
+	}
+	.copyright-footer {
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+		a {
+			width: 100%;
+			text-align: center;
+			color: #f5b8bc;
+			font-size: 11px/1.4em;
 		}
 	}
 }
