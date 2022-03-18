@@ -26,6 +26,26 @@ $carousel-caption-width: 90%;
 }
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
 
+.cont-carousel-d {
+	// display: flex;
+	position: relative;
+	.boute-rouge {
+		position: absolute;
+		width: 90px;
+		top: 0; //750px;
+		left: 70%;
+		height: 35vh;
+		background-color: #ce132388;
+	}
+}
+.cont-slider-d {
+	width: 40vw;
+	margin: auto;
+	margin-top: -150px;
+	.img-R {
+		height: 40vh;
+	}
+}
 .cont-slider-m {
 	width: 90vw;
 	margin: auto;

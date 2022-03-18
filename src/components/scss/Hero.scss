@@ -1,7 +1,88 @@
 @import "./scss-variables";
-
+@import "sass-rem";
 .chapeau {
 	height: 10vh;
+}
+
+.cont-hero-d {
+	background-color: $rouge-nav;
+}
+.hero-d {
+	position: relative;
+	//padding-top: 10vh;
+	height: 90vh;
+	width: 95vw;
+	background-position: center;
+	// background-color: rgba(34, 34, 34, 0.253);
+	background-image: url("../../images/AdobeStock_99718636.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	.cont-text-hero-d {
+		padding-top: 15vh;
+		display: flex;
+		flex-direction: column;
+		height: inherit;
+		background-color: rgba(34, 34, 34, 0.253);
+		// padding-bottom: 42.8vh;
+		h1 {
+			margin: 0;
+			font-family: roboto, roboto-bold, sans-serif;
+			font-weight: bold;
+			&:first-child {
+				margin-top: 50px;
+				line-height: 13px;
+				margin-bottom: 50px;
+				span {
+					font-size: 13px;
+					color: $rouge-nav;
+					background-color: #fff;
+					text-transform: uppercase;
+					padding: 0 5px;
+					letter-spacing: 4px;
+					.Les {
+						color: #0a7836;
+					}
+				}
+			}
+			&:nth-child(2) {
+				text-shadow: 2px 2px black;
+				color: #fff;
+				text-transform: uppercase;
+
+				// line-height: 0.8em;
+
+				p {
+					margin: 0;
+				}
+				p:nth-child(1) {
+					font-size: rem(40px);
+				}
+				p:nth-child(2) {
+					font-size: rem(65px);
+				}
+				p:nth-child(3) {
+					font-size: rem(40px);
+				}
+				p:nth-child(4) {
+					font-size: rem(60px);
+				}
+			}
+		}
+
+		a {
+			color: #fff;
+			text-decoration: none;
+			background-color: #0a7836;
+			width: fit-content;
+			margin: 20px auto;
+			padding: 15px 25px;
+			border-radius: 25px;
+			font-family: roboto, roboto-bold, sans-serif;
+			font-weight: bold;
+			font-size: 13px;
+		}
+	}
 }
 
 .hero {
