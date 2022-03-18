@@ -1,5 +1,7 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
+import { Link } from "react-router-dom";
+
 import "../scss/DemandeDevis.scss";
 
 const DemandeDevis = () => {
@@ -21,8 +23,9 @@ const DemandeDevis = () => {
 							pour toutes demandes d'expertise, nous vous
 							apporterons un devis adapté à vos besoins.
 						</p>
-
-						<button className="btn-devis">Devis gratuit</button>
+						<Link to="/contact">
+							<button className="btn-devis">Devis gratuit</button>
+						</Link>
 					</div>
 				</div>
 			)}

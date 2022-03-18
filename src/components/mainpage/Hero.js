@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "../scss/Hero.scss";
 
 const Hero = () => {
@@ -17,9 +18,11 @@ const Hero = () => {
 						<p>comme si c'était</p>
 						<p>pour nous!</p>
 					</h1>
-					<a href="#" className="devis-link">
-						Devis gratuit
-					</a>
+					<Link to="/contact">
+						<a href="#" className="devis-link">
+							Devis gratuit
+						</a>
+					</Link>
 				</div>
 			</div>
 		</>
