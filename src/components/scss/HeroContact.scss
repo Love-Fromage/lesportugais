@@ -1,0 +1,49 @@
+@import "./scss-variables";
+@import "sass-rem";
+
+.bigC {
+	color: $rouge-nav;
+	top: -40px;
+}
+
+.chapeauC {
+	height: 1px;
+}
+.lilNous {
+	// margin-left: auto;
+}
+.hero-contact {
+	// background-image: url("../../images/AdobeStock_314878805.jpeg");
+	background-image: url("../../images/AdobeStock_314878805.jpeg");
+	background-size: cover;
+	background-position-y: 5%;
+	background-position-x: 50%;
+}
+.bg-text-hero-contact {
+	height: 415px;
+	padding-top: 80px;
+	background-color: rgba(0, 0, 0, 0.37);
+
+	.petit-para-hero-contact {
+		margin-top: 70px;
+		color: #fff;
+		font-family: Sen, sans-serif;
+	}
+}
+.title-container-contact {
+	display: flex;
+	width: fit-content;
+	flex-direction: column;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	// height: 415px;
+	// width: 100%;
+	margin-top: 70px;
+	span {
+		color: #fff;
+		&:nth-child(3) {
+			color: $rouge-nav;
+		}
+	}
+}

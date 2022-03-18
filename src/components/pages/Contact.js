@@ -1,11 +1,16 @@
 import React from "react";
+import Formulaire from "../contactpage/Formulaire";
+import HeroContact from "../contactpage/HeroContact";
+import Footer from "../mainpage/Footer";
 import Header from "../mainpage/header/Header";
 
 const Contact = () => {
 	return (
 		<>
 			<Header />
-			<div>Contact</div>
+			<HeroContact />
+			<Formulaire />
+			<Footer />
 		</>
 	);
 };
