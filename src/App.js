@@ -5,6 +5,7 @@ import Header from "./components/mainpage/header/Header";
 import Hero from "./components/mainpage/Hero";
 
 import Expertise from "./components/mainpage/Expertises";
+import DemandeDevis from "./components/mainpage/DemandeDevis";
 
 function App() {
 	return (
@@ -13,6 +14,7 @@ function App() {
 			<Hero />
 			<LeCarouselle />
 			<Expertise />
+			<DemandeDevis />
 		</div>
 	);
 }
