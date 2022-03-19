@@ -22,6 +22,9 @@
 	height: inherit;
 	padding-top: 150px;
 	background-color: rgba(0, 0, 0, 0.37);
+	.title-container-contact {
+		margin-left: 35vw;
+	}
 
 	.title {
 		font-size: rem(80px);
@@ -34,7 +37,7 @@
 	}
 	.petit-para-hero-contact {
 		margin-top: 70px;
-		margin-left: 40vw;
+		margin-left: 35vw;
 		margin-right: auto;
 		width: 35%;
 		text-align: left;
