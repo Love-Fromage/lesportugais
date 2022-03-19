@@ -16,6 +16,31 @@ footer {
 	.cont-footer {
 		padding-left: 10vw;
 	}
+	.cont-footer-d {
+		display: flex;
+		width: 80%;
+		justify-content: space-between;
+		align-items: center;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: auto;
+		margin-bottom: auto;
+		.petit-nav-footer {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			margin-top: 70px;
+			h3 {
+				margin-top: 20px;
+			}
+		}
+		.suivez-nous-footer {
+			width: fit-content;
+			p {
+				width: fit-content;
+			}
+		}
+	}
 	.petit-nav-footer {
 		h3 {
 			text-transform: uppercase;

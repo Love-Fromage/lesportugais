@@ -221,7 +221,7 @@ const Realisation = () => {
 							</Carousel.Item>
 						</Carousel>
 					</div>
-					<div className="res-spacer"></div>
+					<div className="res-spacer-d"></div>
 				</div>
 			)}
 		</div>
