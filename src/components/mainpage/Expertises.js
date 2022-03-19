@@ -118,8 +118,6 @@ const Expertise = () => {
 								/>
 								<p>végétaux, plantes et arbustres</p>
 							</div>
-						</div>
-						<div className="row2">
 							<div className="item">
 								<img
 									src="https://static.wixstatic.com/shapes/3a257b_cbe26b66db4a4b7580ac41a228099514.svg"
@@ -134,8 +132,6 @@ const Expertise = () => {
 								/>
 								<p>pose et entretien complet de la pelouse</p>
 							</div>
-						</div>
-						<div className="row2">
 							<div className="item">
 								<img
 									src="https://static.wixstatic.com/shapes/3a257b_1416a383ebe44c07aaeaab4491e97a22.svg"
