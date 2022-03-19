@@ -4,6 +4,70 @@
 
 $rem-baseline: 10px;
 
+.cont-demandeDevis-d {
+	width: 100vw;
+	height: 495px;
+	background-image: url("https://static.wixstatic.com/media/3a257b_2d4204be49154e4da2b3f4c0b3b55161~mv2.jpg");
+	background-attachment: fixed;
+	background-position-y: center;
+	background-repeat: no-repeat;
+
+	background-size: cover;
+	position: relative;
+	.bg-devis {
+		background-color: #30303060;
+		height: inherit;
+	}
+	.chapeau2 {
+		padding-bottom: 20px;
+	}
+	p {
+		&:nth-child(2) {
+			width: fit-content;
+			margin: 20px auto;
+			padding: 0 10px;
+			background-color: #fff;
+			color: $rouge-nav;
+			text-transform: uppercase;
+		}
+		&:nth-child(4) {
+			width: 75%;
+			margin: 20px auto;
+			color: #fff;
+			font-weight: 600;
+		}
+	}
+	h2 {
+		text-transform: uppercase;
+		color: #fff;
+		font-size: rem(37px);
+		text-shadow: 2px 2px #303030;
+	}
+
+	.btn-devis {
+		background-color: #ad1019;
+		// background-color: $rouge-nav;
+		color: #fff;
+		box-shadow: none;
+		text-shadow: none;
+		font-weight: 600;
+		margin-top: 50px;
+		padding: 15px 45px;
+		border-radius: 25px;
+		border: none;
+	}
+	.bg-devis-d {
+		background-color: rgba(0, 0, 0, 0.397);
+		height: inherit;
+		p:first-child {
+			letter-spacing: 0.4em;
+		}
+	}
+}
+#demande-devis-p-d {
+	width: 40%;
+	// background-color: #ad1019;
+}
 .cont-demandeDevis {
 	width: 100vw;
 	height: 450px;
@@ -46,6 +110,7 @@ $rem-baseline: 10px;
 
 	.btn-devis {
 		background-color: #ad1019;
+		// background-color: $rouge-nav;
 		color: #fff;
 		box-shadow: none;
 		text-shadow: none;

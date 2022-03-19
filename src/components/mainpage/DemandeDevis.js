@@ -13,8 +13,8 @@ const DemandeDevis = () => {
 	return (
 		<div>
 			{isTabletOrMobile && (
-				<div className="cont-demandeDevis">
-					<div className="bg-devis">
+				<div className="cont-demandeDevis cont-demandeDevis-d">
+					<div className="bg-devis bg-devis-d">
 						<div className="chapeau2"></div>
 						<p>demande de</p>
 						<h2>devis</h2>
@@ -24,12 +24,32 @@ const DemandeDevis = () => {
 							apporterons un devis adapté à vos besoins.
 						</p>
 						<Link to="/contact">
-							<button className="btn-devis">Devis gratuit</button>
+							<button className="btn-devis btn-devis-d">
+								Devis gratuit
+							</button>
 						</Link>
 					</div>
 				</div>
 			)}
-			{isDesktopOrLaptop && <div>version desktop</div>}
+			{isDesktopOrLaptop && (
+				<div className="cont-demandeDevis-d">
+					<div className="bg-devis-d">
+						<div className="chapeau2"></div>
+						<p>demande de</p>
+						<h2>devis</h2>
+						<p id="demande-devis-p-d">
+							Vous souhaitez plus d'informations? Contactez-nous,
+							pour toutes demandes d'expertise, nous vous
+							apporterons un devis adapté à vos besoins.
+						</p>
+						<Link to="/contact">
+							<button className="btn-devis btn-devis-d">
+								Devis gratuit
+							</button>
+						</Link>
+					</div>
+				</div>
+			)}
 		</div>
 	);
 };
