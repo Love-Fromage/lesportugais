@@ -1,6 +1,65 @@
 @import "./scss-variables";
 @import "sass-rem";
 
+//code pour le responsive en desktop, sinon le site
+// est fait pour moblie de base
+@media screen and(min-width:1224px) {
+	.cont-form {
+		margin-top: -550px;
+		background-color: #fff;
+		padding: 10px;
+		padding-top: 50px;
+		// width: 60%;
+		width: fit-content;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 50px;
+
+		// height: 100vh;
+		height: 50vh;
+		// display: flex;
+		input {
+			width: 60%;
+		}
+		textarea.form-control {
+			width: 100%;
+			resize: none;
+			margin: 0;
+			// float: right;
+		}
+		.btn-form-contact {
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		.cont-d {
+			display: flex;
+			justify-content: center;
+			margin-left: auto;
+			margin-right: auto;
+			.form-gauche,
+			.form-droite {
+				width: fit-content;
+			}
+			.form-gauche {
+				margin-right: 35px;
+				input {
+					margin-left: 0;
+					width: 120%;
+					// margin-right: auto;
+				}
+			}
+			.form-droite {
+				// margin-left: 50px;
+				// margin-right: auto;
+				width: 500px;
+				textarea.form-control {
+					// width: 500px;
+					height: 210px;
+				}
+			}
+		}
+	}
+}
 .form-group {
 	margin-top: 20px;
 	width: 90%;
