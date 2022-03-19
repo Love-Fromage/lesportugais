@@ -45,6 +45,11 @@ $carousel-caption-width: 90%;
 	.img-R {
 		height: 40vh;
 	}
+	@media screen and(max-height:700px) {
+		.img-R {
+			height: 60vh;
+		}
+	}
 }
 .cont-slider-m {
 	width: 90vw;
