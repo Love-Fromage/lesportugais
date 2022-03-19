@@ -8,6 +8,7 @@ import Realisation from "../mainpage/Realisations";
 import Footer from "../mainpage/Footer";
 
 const MainPage = () => {
+	window.scrollTo(0, 0);
 	return (
 		<>
 			<Header />

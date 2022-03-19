@@ -25,10 +25,8 @@ const Hero = () => {
 								<p>comme si c'était</p>
 								<p>pour nous!</p>
 							</h1>
-							<Link to="/contact">
-								<a href="#" className="devis-link">
-									Devis gratuit
-								</a>
+							<Link to="/contact" className="devis-link">
+								Devis gratuit
 							</Link>
 						</div>
 					</div>
@@ -53,10 +51,8 @@ const Hero = () => {
 									<p>comme si c'était</p>
 									<p>pour nous!</p>
 								</h1>
-								<Link to="/contact">
-									<a href="#" className="devis-link-d">
-										Devis gratuit
-									</a>
+								<Link to="/contact" className="devis-link-d">
+									Devis gratuit
 								</Link>
 							</div>
 						</div>

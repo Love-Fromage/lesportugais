@@ -80,6 +80,7 @@ const LeCarouselle = () => {
 							</Carousel.Item>
 						</Carousel>
 					</div>
+					<div id="expertise"></div>
 				</div>
 			)}
 
@@ -155,6 +156,7 @@ const LeCarouselle = () => {
 						</div>
 						<div className="boute-rouge"></div>
 					</div>
+					<div id="expertise"></div>
 				</div>
 			)}
 		</div>

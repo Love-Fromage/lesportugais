@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 import "../scss/Footer.scss";
 
-const Footer = () => {
+const FooterContact = () => {
 	const isDesktopOrLaptop = useMediaQuery({
 		query: "(min-width: 1224px)",
 	});
@@ -19,21 +19,19 @@ const Footer = () => {
 					<div className="cont-footer">
 						<div className="petit-nav-footer">
 							<h3>
-								<Link
-									to="/react"
-									onClick={() => window.scrollTo(0, 0)}
-								>
+								<Link to="/react">
 									Paysagiste <br /> les portugais
 								</Link>
 							</h3>
 							<div className="cont-link-footer">
-								<Scroller to="expertise" duration={1000}>
-									Expertises
-								</Scroller>
-								<Scroller to="realisation" duration={1000}>
-									Réalisations
-								</Scroller>
-								<Link to="/contact">Contact</Link>
+								<Link to="/react">Expertises</Link>
+								<Link to="/react">Réalisations</Link>
+								<Link
+									to="/contact"
+									onClick={() => window.scrollTo(0, 0)}
+								>
+									Contact
+								</Link>
 							</div>
 						</div>
 						<div className="info-contact-footer">
@@ -67,21 +65,19 @@ const Footer = () => {
 					<div className="cont-footer-d">
 						<div className="petit-nav-footer">
 							<h3>
-								<Link
-									to="/react"
-									onClick={() => window.scrollTo(0, 0)}
-								>
+								<Link to="/react">
 									Paysagiste <br /> les portugais
 								</Link>
 							</h3>
 							<div className="cont-link-footer">
-								<Scroller to="expertise" duration={1000}>
-									Expertises
-								</Scroller>
-								<Scroller to="realisation" duration={1000}>
-									Réalisations
-								</Scroller>
-								<Link to="/contact">Contact</Link>
+								<Link to="/react">Expertises</Link>
+								<Link to="/react">Réalisations</Link>
+								<Link
+									to="/contact"
+									onClick={() => window.scrollTo(0, 0)}
+								>
+									Contact
+								</Link>
 							</div>
 						</div>
 						<div className="info-contact-footer">
@@ -115,4 +111,4 @@ const Footer = () => {
 	);
 };
 
-export default Footer;
+export default FooterContact;

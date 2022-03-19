@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Link as Scroller } from "react-scroll";
-import "../../scss/Header.scss";
-import "../../scss/Hamburger.scss";
+import "../scss/Header.scss";
+import "../scss/Hamburger.scss";
 
 import { useMediaQuery } from "react-responsive";
 
-const Header = (props) => {
+const HeaderContact = (props) => {
 	// Declare a new state variable, which we'll call "count"
 	const [toggleMenu, setToggleMenu] = useState(false);
 	const isFromC = props.fromC;
@@ -291,19 +291,20 @@ const Header = (props) => {
 						</li>
 						<li className="ligne"></li>
 						<li>
-							<Scroller to="expertise" duration={1000}>
-								Expertises
-							</Scroller>
+							<Link to="/react">Expertises</Link>
 						</li>
 						<li className="ligne"></li>
 						<li>
-							<Scroller tp="realisation" duration={1000}>
-								Réalisations
-							</Scroller>
+							<Link to="/react">Réalisations</Link>
 						</li>
 						<li className="ligne"></li>
 						<li>
-							<Link to="/contact">Contact</Link>
+							<Link
+								to="/contact"
+								onClick={() => window.scrollTo(0, 0)}
+							>
+								Contact
+							</Link>
 						</li>
 					</ul>
 				</div>
@@ -322,10 +323,7 @@ const Header = (props) => {
 					</div>
 					<div className="cont-nav-droit-d">
 						<div className="logo">
-							<Link
-								to="/react"
-								onClick={() => window.scrollTo(0, 0)}
-							>
+							<Link to="/react">
 								<svg
 									preserveAspectRatio="xMidYMid meet"
 									data-bbox="14.55 53.06 490.992 139.12"
@@ -566,14 +564,16 @@ const Header = (props) => {
 						</div>
 						<div className="list-d">
 							<ul>
-								<Scroller to="expertise">
+								<Link to="/react">
 									<li>Expertises</li>
-								</Scroller>
-
-								<Scroller to="realisation" duration={1000}>
+								</Link>
+								<Link to="/react">
 									<li>Réalisations</li>
-								</Scroller>
-								<Link to="/contact">
+								</Link>
+								<Link
+									to="/contact"
+									onClick={() => window.scrollTo(0, 0)}
+								>
 									<li>Contact</li>
 								</Link>
 							</ul>
@@ -585,4 +585,4 @@ const Header = (props) => {
 	);
 };
 
-export default Header;
+export default HeaderContact;
