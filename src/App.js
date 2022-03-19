@@ -18,12 +18,6 @@ function App() {
 				<Routes>
 					<Route path="/react" element={<MainPage />} />
 					<Route path="/contact" element={<Contact />} />
-					{/* <Hero />
-					<LeCarouselle />
-					<Expertise />
-					<DemandeDevis />
-					<Realisation />
-					<Footer /> */}
 				</Routes>
 			</div>
 		</Router>
