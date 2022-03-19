@@ -34,9 +34,24 @@ const HeroContact = () => {
 			)}
 			{isDesktopOrLaptop && (
 				<div>
-					<div>Desktop</div>
-					<div>Desktop</div>
-					<div>Desktop</div>
+					<div className="chapeauC-d"></div>
+					<div className="hero-contact hero-contact-d">
+						<div className="bg-text-hero-contact-d">
+							<div className="title-container title-container-contact">
+								<span className="lilNos lilNous-d">nous</span>
+								<span className="title">Contactez</span>
+								<span className="bigE bigC">C</span>
+							</div>
+							<div className="petit-para-hero-contact">
+								<p>
+									Pour nous contacter afin d'obtenir un devis
+									personnalisé ou pour toutes informations,
+									remplissez le formulaire ou appelez-nous
+									directementé
+								</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			)}
 		</>
