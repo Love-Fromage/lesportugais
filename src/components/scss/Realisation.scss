@@ -11,6 +11,30 @@
 	margin-right: auto;
 	// margin-bottom: 5550px;
 }
+.cont-realisations-d {
+	display: flex;
+}
+.realisation-d {
+	// margin-left: auto;
+	// margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	width: 50vw;
+	// align-items: center;
+	p:first-child {
+		margin-top: 55px;
+		width: 90%;
+	}
+	.petit-point-res {
+		margin-top: 0px;
+		margin-bottom: 10px;
+		width: 75%;
+		span {
+			font-style: italic;
+			font-weight: 400;
+		}
+	}
+}
 .realisation {
 	// margin-left: auto;
 	// margin-right: auto;
