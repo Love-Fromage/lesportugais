@@ -1,4 +1,44 @@
 @import "./scss-variables";
+@import "sass-rem";
+.title-container-d {
+	position: relative;
+	display: flex;
+	width: fit-content;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	align-self: center;
+	margin-top: 175px;
+	margin-left: auto;
+	margin-right: auto;
+	span {
+		//position: absolute;
+		text-align: left;
+	}
+	.bigE {
+		font-size: rem(300px);
+		top: -150px;
+		left: 3vw;
+	}
+	.lilNos {
+		margin-left: -20px;
+		font-size: rem(16px);
+		letter-spacing: 0.2em;
+	}
+	.title {
+		font-size: rem(80px);
+	}
+}
+
+.cont-text-d {
+	p {
+		width: 40%;
+		margin-left: auto;
+		margin-right: 10%;
+		text-align: left;
+	}
+}
 
 .title-container {
 	position: relative;
