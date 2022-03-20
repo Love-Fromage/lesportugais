@@ -1,0 +1,14 @@
+.transition-page {
+	animation: transi forwards 400ms ease;
+}
+
+@keyframes transi {
+	from {
+		//transform: scaleX(0.9);
+		opacity: 0;
+	}
+	to {
+		//transform: scalX(1);
+		opacity: 1;
+	}
+}

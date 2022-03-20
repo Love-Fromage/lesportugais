@@ -3,6 +3,7 @@ import FooterContact from "../contactpage/FooterContact";
 import Formulaire from "../contactpage/Formulaire";
 import HeaderContact from "../contactpage/HeaderContact";
 import HeroContact from "../contactpage/HeroContact";
+import "../scss/AnimationsPages.scss";
 // import Footer from "../mainpage/Footer";
 // import Header from "../mainpage/header/Header";
 
@@ -11,8 +12,10 @@ const Contact = () => {
 	return (
 		<>
 			<HeaderContact />
-			<HeroContact />
-			<Formulaire />
+			<div className="transition-page">
+				<HeroContact />
+				<Formulaire />
+			</div>
 			<FooterContact />
 		</>
 	);

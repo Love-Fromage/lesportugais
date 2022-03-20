@@ -6,17 +6,20 @@ import Expertise from "../mainpage/Expertises";
 import DemandeDevis from "../mainpage/DemandeDevis";
 import Realisation from "../mainpage/Realisations";
 import Footer from "../mainpage/Footer";
+import "../scss/AnimationsPages.scss";
 
 const MainPage = () => {
 	window.scrollTo(0, 0);
 	return (
 		<>
 			<Header />
-			<Hero />
-			<LeCarouselle />
-			<Expertise />
-			<DemandeDevis />
-			<Realisation />
+			<div className="transition-page">
+				<Hero />
+				<LeCarouselle />
+				<Expertise />
+				<DemandeDevis />
+				<Realisation />
+			</div>
 			<Footer />
 		</>
 	);
