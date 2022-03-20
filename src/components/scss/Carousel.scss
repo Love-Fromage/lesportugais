@@ -24,14 +24,19 @@ $carousel-caption-width: 90%;
 .p-first {
 	//margin-top: -140px;
 }
+.carousel {
+	z-index: 2;
+}
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
 
 .cont-carousel-d {
 	// display: flex;
 	position: relative;
+	z-index: 1;
 	.boute-rouge {
 		position: absolute;
 		width: 90px;
+		z-index: 0;
 		top: 0; //750px;
 		left: 70%;
 		height: 35vh;
@@ -42,10 +47,11 @@ $carousel-caption-width: 90%;
 	width: 40vw;
 	margin: auto;
 	margin-top: -150px;
+	z-index: 1;
 	.img-R {
-		height: 40vh;
+		height: 50vh;
 	}
-	@media screen and(max-height:700px) {
+	@media screen and(max-height:800px) {
 		.img-R {
 			height: 60vh;
 		}

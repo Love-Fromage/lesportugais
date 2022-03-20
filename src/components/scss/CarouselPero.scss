@@ -1,0 +1,33 @@
+.cont-carou-perso {
+	width: 4 * 200px;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+
+	.prev-btn,
+	.next-btn {
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+
+	.prev-btn {
+		transform: scaleX(-1);
+	}
+
+	.fenetre {
+		width: 50vw;
+		display: flex;
+		.bande {
+			display: flex;
+
+			// flex-wrap: nowrap;
+			overflow: hidden;
+			width: fit-content;
+			img {
+				width: 200px;
+			}
+		}
+	}
+}

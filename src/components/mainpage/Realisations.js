@@ -2,6 +2,8 @@ import React from "react";
 import { useMediaQuery } from "react-responsive";
 import "../scss/Realisation.scss";
 import Carousel from "react-bootstrap/Carousel";
+import { GrNext } from "react-icons/gr";
+import CarouselPerso from "./CarouselPerso";
 
 const Realisation = () => {
 	const isDesktopOrLaptop = useMediaQuery({
@@ -48,7 +50,7 @@ const Realisation = () => {
 						</div>
 					</div>
 					<div className="cont-slide-m slide-m-res">
-						<Carousel infinite={false}>
+						<Carousel>
 							<Carousel.Item>
 								<img
 									src="https://static.wixstatic.com/media/3a257b_c50a0a527ed74010a0089bb3c1e979d8~mv2.jpg"
@@ -157,8 +159,9 @@ const Realisation = () => {
 							</div>
 						</div>
 					</div>
+					<CarouselPerso />
 					<div className="cont-slide-m slide-m-res">
-						<Carousel infinite={false}>
+						<Carousel>
 							<Carousel.Item>
 								<img
 									src="https://static.wixstatic.com/media/3a257b_c50a0a527ed74010a0089bb3c1e979d8~mv2.jpg"

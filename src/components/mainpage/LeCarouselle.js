@@ -7,6 +7,9 @@ import "../../../src/index.scss";
 import "../scss/Carousel.scss";
 
 const LeCarouselle = () => {
+	const nextSlide = () => {
+		console.log("bonjour");
+	};
 	const isDesktopOrLaptop = useMediaQuery({
 		query: "(min-width: 1224px)",
 	});
