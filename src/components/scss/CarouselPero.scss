@@ -1,10 +1,11 @@
 .cont-carou-perso {
-	width: 4 * 200px;
-	height: 100px;
+	width: 90vw;
+	height: fit-content;
 	display: flex;
 	justify-content: center;
 	margin-left: auto;
 	margin-right: auto;
+	overflow: hidden;
 
 	.prev-btn,
 	.next-btn {
@@ -17,16 +18,18 @@
 	}
 
 	.fenetre {
-		width: 50vw;
+		width: 80vw;
 		display: flex;
+		overflow: hidden;
+		height: 678px;
 		.bande {
 			display: flex;
+			height: inherit;
 
 			// flex-wrap: nowrap;
-			overflow: hidden;
-			width: fit-content;
+			// width: 100%;
 			img {
-				width: 200px;
+				width: 80vw;
 			}
 		}
 	}

@@ -160,7 +160,7 @@ const Realisation = () => {
 						</div>
 					</div>
 					<CarouselPerso />
-					<div className="cont-slide-m slide-m-res">
+					{/* <div className="cont-slide-m slide-m-res">
 						<Carousel>
 							<Carousel.Item>
 								<img
@@ -223,8 +223,8 @@ const Realisation = () => {
 								/>
 							</Carousel.Item>
 						</Carousel>
-					</div>
-					<div className="res-spacer-d"></div>
+					</div> */}
+					{/* <div className="res-spacer-d"></div> */}
 				</div>
 			)}
 		</div>
