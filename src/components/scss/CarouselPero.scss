@@ -1,3 +1,15 @@
+.fade-carou {
+	// animation-play-state: initial;
+	animation: bande-fade 200ms backwards;
+}
+@keyframes bande-fade {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
 .cont-carou-perso {
 	width: 90vw;
 	height: fit-content;
@@ -13,6 +25,7 @@
 		margin-bottom: auto;
 		margin-left: auto;
 		margin-right: auto;
+		cursor: pointer;
 	}
 
 	.prev-btn {
@@ -20,7 +33,7 @@
 	}
 
 	.fenetre {
-		width: 80vw;
+		width: 60vw;
 		display: flex;
 		overflow: hidden;
 		height: 678px;
@@ -28,10 +41,20 @@
 			display: flex;
 			height: inherit;
 
+			.cont-inner-bande {
+				width: 60vw;
+				height: auto;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				// overflow: hidden;
+			}
 			// flex-wrap: nowrap;
 			// width: 100%;
 			img {
-				width: 80vw;
+				max-width: 100%;
+				max-height: 100%;
+				margin: auto;
 			}
 		}
 	}
