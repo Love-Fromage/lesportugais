@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Fade } from "react-bootstrap";
 import { GrNext } from "react-icons/gr";
+import { useMediaQuery } from "react-responsive";
 import image1 from "../../images/IMG_0239-2.jpg";
 import image2 from "../../images/IMG_0089-2.jpg";
 import image3 from "../../images/IMG_0215-2.jpg";
@@ -13,6 +14,10 @@ import image9 from "../../images/IMG_0903-2.jpg";
 import "../scss/CarouselPero.scss";
 
 const CarouselPerso = () => {
+	const isDesktopOrLaptop = useMediaQuery({
+		query: "(min-width: 1224px)",
+	});
+	const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
 	const [marge, setMarge] = useState(0);
 	const [pos, setPos] = useState(0);
 	let bandStyle = {
@@ -64,11 +69,13 @@ const CarouselPerso = () => {
 	return (
 		<div className="cont-carou-perso">
 			<div className="prev-btn" onClick={prevSlide}>
-				<GrNext size="50px" />
+				{isTabletOrMobile && <GrNext size="100px" />}
+				{isDesktopOrLaptop && <GrNext size="50px" />}
 			</div>
 			<div className="fenetre">{bande}</div>
 			<div className="next-btn" onClick={nextSlide}>
-				<GrNext size="50px" />
+				{isTabletOrMobile && <GrNext size="100px" />}
+				{isDesktopOrLaptop && <GrNext size="50px" />}
 			</div>
 		</div>
 	);
