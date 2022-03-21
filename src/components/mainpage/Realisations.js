@@ -1,8 +1,8 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
 import "../scss/Realisation.scss";
-import Carousel from "react-bootstrap/Carousel";
-import { GrNext } from "react-icons/gr";
+// import Carousel from "react-bootstrap/Carousel";
+// import { GrNext } from "react-icons/gr";
 import CarouselPerso from "./CarouselPerso";
 
 const Realisation = () => {

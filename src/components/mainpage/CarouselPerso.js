@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { Fade } from "react-bootstrap";
+import React, { useState } from "react";
+// import { Fade } from "react-bootstrap";
 import { GrNext } from "react-icons/gr";
 import { useMediaQuery } from "react-responsive";
 import image1 from "../../images/IMG_0239-2.jpg";
@@ -24,9 +24,6 @@ const CarouselPerso = () => {
 		marginLeft: marge + "vw",
 		transtion: "ease 1s",
 	};
-	useEffect(() => {
-		const Fade = <div className="transition-page"></div>;
-	}, [marge]);
 
 	let bande = (
 		<div className="bande" style={bandStyle}>
@@ -56,7 +53,7 @@ const CarouselPerso = () => {
 	};
 	const prevSlide = () => {
 		// console.log(marge);
-		if (pos == 0) {
+		if (pos === 0) {
 			// console.log(pos);
 			setPos(8);
 			setMarge(-(8 * 80));
