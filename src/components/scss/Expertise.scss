@@ -60,6 +60,9 @@
 			img {
 				width: 83px;
 				margin: 0 auto;
+				// background-color: #549a6f;
+				filter: invert(54%) sepia(45%) saturate(381%) hue-rotate(90deg)
+					brightness(90%) contrast(87%);
 			}
 			p {
 				text-align: center;

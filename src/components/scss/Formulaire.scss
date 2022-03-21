@@ -60,6 +60,11 @@
 		}
 	}
 }
+@media screen and(max-height:800px) {
+	.cont-form {
+		height: auto;
+	}
+}
 .merci {
 	margin-top: 50px;
 }

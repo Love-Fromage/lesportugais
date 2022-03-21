@@ -47,7 +47,7 @@ const HeroContact = () => {
 									Pour nous contacter afin d'obtenir un devis
 									personnalisé ou pour toutes informations,
 									remplissez le formulaire ou appelez-nous
-									directementé
+									directement.
 								</p>
 							</div>
 						</div>
