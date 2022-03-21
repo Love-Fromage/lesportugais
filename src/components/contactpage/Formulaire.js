@@ -1,9 +1,10 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "../scss/Formulaire.scss";
 import emailjs from "emailjs-com";
 
 const Formulaire = () => {
 	const form = useRef();
+	const [sent, setSent] = useState(false);
 	const sendEmail = (e) => {
 		e.preventDefault();
 
@@ -17,6 +18,7 @@ const Formulaire = () => {
 			.then(
 				(result) => {
 					console.log(result.text);
+					setSent(true);
 				},
 				(error) => {
 					console.log(error.text);
@@ -87,9 +89,15 @@ const Formulaire = () => {
 							</div>
 						</div>
 					</div>
-					<button type="submit" className="btn-form-contact">
-						Envoyer
-					</button>
+					{sent ? (
+						<div className="merci">
+							Merci. Votre message à été envoyer avec succès.
+						</div>
+					) : (
+						<button type="submit" className="btn-form-contact">
+							Envoyer
+						</button>
+					)}
 				</form>
 			</div>
 		</div>
