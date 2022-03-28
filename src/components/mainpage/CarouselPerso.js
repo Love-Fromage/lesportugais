@@ -260,8 +260,10 @@ const CarouselPerso = () => {
 						style={{
 							"--swiper-navigation-color": "#fff",
 							"--swiper-pagination-color": "#fff",
+							display: "flex",
+							alignItems: "center",
+							height: "fit-content",
 
-							marginBlock: "auto",
 							// "--swpier-navigation-background-color: #000",
 						}}
 						// spaceBetween={}
@@ -269,11 +271,12 @@ const CarouselPerso = () => {
 						onSlideChange={() => console.log("slide change")}
 						onSwiper={(swiper) => console.log(swiper)}
 						zoom={true}
+						thumbs={true}
 						navigation={true}
 						modules={[Zoom, Navigation]}
 					>
 						<SwiperSlide>
-							<div className="swiper-zoom-container">
+							<div className="swiper-zoom-container centrer-la-slide">
 								<img
 									className={classes.imgDeSwiper}
 									src={image1}
@@ -283,7 +286,7 @@ const CarouselPerso = () => {
 							</div>
 						</SwiperSlide>
 						<SwiperSlide>
-							<div className="swiper-zoom-container">
+							<div className="swiper-zoom-container centrer-la-slide">
 								<img
 									className={classes.imgDeSwiper}
 									src={image2}
@@ -291,8 +294,14 @@ const CarouselPerso = () => {
 								/>
 							</div>
 						</SwiperSlide>
-						<SwiperSlide>
-							<div className="swiper-zoom-container">
+						<SwiperSlide
+							style={{
+								display: "flex",
+								alignItems: "center",
+								verticalAlign: "middle;",
+							}}
+						>
+							<div className="swiper-zoom-container centrer-la-slide">
 								<img
 									className={classes.imgDeSwiper}
 									src={image3}
@@ -301,14 +310,16 @@ const CarouselPerso = () => {
 							</div>
 						</SwiperSlide>
 						<SwiperSlide>
-							<img
-								className={classes.imgDeSwiper}
-								src={image4}
-								alt=""
-							/>
+							<div className="swiper-zoom-container centrer-la-slide">
+								<img
+									className={classes.imgDeSwiper}
+									src={image4}
+									alt=""
+								/>
+							</div>
 						</SwiperSlide>
 						<SwiperSlide>
-							<div className="swiper-zoom-container">
+							<div className="swiper-zoom-container centrer-la-slide">
 								<img
 									className={classes.imgDeSwiper}
 									src={image5}
@@ -317,7 +328,7 @@ const CarouselPerso = () => {
 							</div>
 						</SwiperSlide>
 						<SwiperSlide>
-							<div className="swiper-zoom-container">
+							<div className="swiper-zoom-container centrer-la-slide">
 								<img
 									className={classes.imgDeSwiper}
 									src={image6}
@@ -326,7 +337,7 @@ const CarouselPerso = () => {
 							</div>
 						</SwiperSlide>
 						<SwiperSlide>
-							<div className="swiper-zoom-container">
+							<div className="swiper-zoom-container centrer-la-slide">
 								<img
 									className={classes.imgDeSwiper}
 									src={image7}
@@ -335,7 +346,7 @@ const CarouselPerso = () => {
 							</div>
 						</SwiperSlide>
 						<SwiperSlide>
-							<div className="swiper-zoom-container">
+							<div className="swiper-zoom-container centrer-la-slide">
 								<img
 									className={classes.imgDeSwiper}
 									src={image8}
@@ -344,7 +355,7 @@ const CarouselPerso = () => {
 							</div>
 						</SwiperSlide>
 						<SwiperSlide>
-							<div className="swiper-zoom-container">
+							<div className="swiper-zoom-container centrer-la-slide">
 								<img
 									className={classes.imgDeSwiper}
 									src={image9}
