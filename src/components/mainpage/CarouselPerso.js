@@ -1,8 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 // import { Fade } from "react-bootstrap";
 import { GrNext } from "react-icons/gr";
 import { useMediaQuery } from "react-responsive";
+import Gallery from "react-photo-gallery";
+import { photos } from "./Photo";
+import Carousel, { Modal, ModalGateway } from "react-images";
 
+import "../scss/CarouselPero.scss";
 import image1 from "../../images/IMG_0239-2.jpg";
 import image2 from "../../images/IMG_0089-2.jpg";
 import image3 from "../../images/IMG_0215-2.jpg";
@@ -12,9 +16,8 @@ import image6 from "../../images/IMG_0186-2.jpg";
 import image7 from "../../images/IMG_0957-2.jpg";
 import image8 from "../../images/IMG_0245-2.jpg";
 import image9 from "../../images/IMG_0903-2.jpg";
-import "../scss/CarouselPero.scss";
-
 const CarouselPerso = () => {
+	// var Carousel = require("react-responsive-carousel").Carousel;
 	const isDesktopOrLaptop = useMediaQuery({
 		query: "(min-width: 1224px)",
 	});
@@ -22,6 +25,18 @@ const CarouselPerso = () => {
 	const [marge, setMarge] = useState(0);
 	const [pos, setPos] = useState(0);
 	const [isActive, setIsActive] = useState(true);
+	const [currentImage, setCurrentImage] = useState(0);
+	const [viewerIsOpen, setViewerIsOpen] = useState(false);
+
+	const openLightbox = useCallback((event, { photo, index }) => {
+		setCurrentImage(index);
+		setViewerIsOpen(true);
+	}, []);
+
+	const closeLightbox = () => {
+		setCurrentImage(0);
+		setViewerIsOpen(false);
+	};
 
 	let bandStyle = {
 		marginLeft: marge + "vw",
@@ -84,16 +99,31 @@ const CarouselPerso = () => {
 	};
 
 	return (
-		<div className="cont-carou-perso">
-			<div className="prev-btn" onClick={prevSlide}>
-				{isTabletOrMobile && <GrNext size="100px" />}
-				{isDesktopOrLaptop && <GrNext size="50px" />}
-			</div>
-			<div className="fenetre">{bande}</div>
-			<div className="next-btn" onClick={nextSlide}>
-				{isTabletOrMobile && <GrNext size="100px" />}
-				{isDesktopOrLaptop && <GrNext size="50px" />}
-			</div>
+		// <div className="cont-carou-perso">
+		// 	<div className="prev-btn" onClick={prevSlide}>
+		// 		{isTabletOrMobile && <GrNext size="100px" />}
+		// 		{isDesktopOrLaptop && <GrNext size="50px" />}
+		// 	</div>
+		// 	<div className="fenetre">{bande}</div>
+		// 	<div className="next-btn" onClick={nextSlide}>
+		// 		{isTabletOrMobile && <GrNext size="100px" />}
+		// 		{isDesktopOrLaptop && <GrNext size="50px" />}
+		// 	</div>
+		// </div>
+		<div className="contGalerie">
+			<Gallery photos={photos} onClick={openLightbox} rows={2} />
+			<ModalGateway>
+				{viewerIsOpen ? (
+					<Modal onClose={closeLightbox}>
+						<Carousel
+							currentIndex={currentImage}
+							views={photos.map((x) => ({
+								...x,
+							}))}
+						/>
+					</Modal>
+				) : null}
+			</ModalGateway>
 		</div>
 	);
 };

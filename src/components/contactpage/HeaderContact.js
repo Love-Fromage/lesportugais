@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Link as Scroller } from "react-scroll";
+import { HashLink } from "react-hash-link";
 import "../scss/Header.scss";
 import "../scss/Hamburger.scss";
 
@@ -564,10 +565,10 @@ const HeaderContact = (props) => {
 						</div>
 						<div className="list-d">
 							<ul>
-								<Link to="/react">
+								<Link to="/react#expertise">
 									<li>Expertises</li>
 								</Link>
-								<Link to="/react">
+								<Link to="/react#realisation">
 									<li>Réalisations</li>
 								</Link>
 								<Link
