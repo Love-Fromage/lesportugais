@@ -13,10 +13,10 @@ import Contact from "./components/pages/Contact";
 
 function App() {
 	return (
-		<Router>
+		<Router basename="/">
 			<div className="App">
 				<Routes>
-					<Route path="/react" element={<MainPage />} />
+					<Route path="/" element={<MainPage />} />
 					<Route path="/contact" element={<Contact />} />
 				</Routes>
 			</div>

@@ -8,7 +8,7 @@ import Carousel, { Modal, ModalGateway } from "react-images";
 // import Modalle from "./Modal";
 import classes from "../scss/Carousel.module.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Zoom, Navigation } from "swiper";
+import { Zoom, Navigation, HashNavigation } from "swiper";
 import "swiper/css";
 import "swiper/css/zoom";
 import "swiper/css/navigation";
