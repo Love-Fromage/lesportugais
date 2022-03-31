@@ -159,6 +159,8 @@
 			img {
 				width: 60px;
 				margin: 0 auto;
+				filter: invert(54%) sepia(45%) saturate(381%) hue-rotate(90deg)
+					brightness(90%) contrast(87%);
 			}
 			p {
 				text-align: center;

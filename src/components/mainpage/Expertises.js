@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import "../scss/Expertise.scss";
+import feuille from "../../images/feuille.svg";
+import barouette from "../../images/barouette.svg";
+import cisaille from "../../images/cisaille.svg";
+import compas from "../../images/compas.svg";
+import herbe from "../../images/herbe.svg";
+import tournevis from "../../images/tournevis.svg";
 
 const Expertise = () => {
 	const isDesktopOrLaptop = useMediaQuery({
@@ -33,49 +39,31 @@ const Expertise = () => {
 					<div className="cont-icons">
 						<div className="row2">
 							<div className="item">
-								<img
-									src="https://static.wixstatic.com/shapes/3a257b_665300e56ac54e2aa53975e701f3c3b0.svg"
-									alt="feuille"
-								/>
+								<img src={feuille} alt="feuille" />
 								<p>entretien paysager complet</p>
 							</div>
 							<div className="item">
-								<img
-									src="https://static.wixstatic.com/shapes/3a257b_3d6bf78cd54f492eac16e3bb6c3cdf66.svg"
-									alt="barouette"
-								/>
+								<img src={barouette} alt="barouette" />
 								<p>végétaux, plantes et arbustres</p>
 							</div>
 						</div>
 						<div className="row2">
 							<div className="item">
-								<img
-									src="https://static.wixstatic.com/shapes/3a257b_cbe26b66db4a4b7580ac41a228099514.svg"
-									alt="ciseau"
-								/>
+								<img src={cisaille} alt="ciseau" />
 								<p>aménagement du terrain</p>
 							</div>
 							<div className="item">
-								<img
-									src="https://static.wixstatic.com/shapes/3a257b_8ded26765af248d2a72671d104a6bab0.svg"
-									alt="herbe"
-								/>
+								<img src={herbe} alt="herbe" />
 								<p>pose et entretien complet de la pelouse</p>
 							</div>
 						</div>
 						<div className="row2">
 							<div className="item">
-								<img
-									src="https://static.wixstatic.com/shapes/3a257b_1416a383ebe44c07aaeaab4491e97a22.svg"
-									alt="compas"
-								/>
+								<img src={compas} alt="compas" />
 								<p>service d'architecture</p>
 							</div>
 							<div className="item">
-								<img
-									src="https://static.wixstatic.com/shapes/3a257b_3b1d50c5d45547678349e48b181138c3.svg"
-									alt="tournevis"
-								/>
+								<img src={tournevis} alt="tournevis" />
 								<p>réparation</p>
 							</div>
 						</div>
@@ -105,45 +93,27 @@ const Expertise = () => {
 					<div className="cont-icons-d">
 						<div className="row2">
 							<div className="item">
-								<img
-									src="https://static.wixstatic.com/shapes/3a257b_665300e56ac54e2aa53975e701f3c3b0.svg"
-									alt="feuille"
-								/>
+								<img src={feuille} alt="feuille" />
 								<p>entretien paysager complet</p>
 							</div>
 							<div className="item">
-								<img
-									src="https://static.wixstatic.com/shapes/3a257b_3d6bf78cd54f492eac16e3bb6c3cdf66.svg"
-									alt="barouette"
-								/>
+								<img src={barouette} alt="barouette" />
 								<p>végétaux, plantes et arbustres</p>
 							</div>
 							<div className="item">
-								<img
-									src="https://static.wixstatic.com/shapes/3a257b_cbe26b66db4a4b7580ac41a228099514.svg"
-									alt="ciseau"
-								/>
+								<img src={cisaille} alt="ciseau" />
 								<p>aménagement du terrain</p>
 							</div>
 							<div className="item">
-								<img
-									src="https://static.wixstatic.com/shapes/3a257b_8ded26765af248d2a72671d104a6bab0.svg"
-									alt="herbe"
-								/>
+								<img src={herbe} alt="herbe" />
 								<p>pose et entretien complet de la pelouse</p>
 							</div>
 							<div className="item">
-								<img
-									src="https://static.wixstatic.com/shapes/3a257b_1416a383ebe44c07aaeaab4491e97a22.svg"
-									alt="compas"
-								/>
+								<img src={compas} alt="compas" />
 								<p>service d'architecture</p>
 							</div>
 							<div className="item">
-								<img
-									src="https://static.wixstatic.com/shapes/3a257b_3b1d50c5d45547678349e48b181138c3.svg"
-									alt="tournevis"
-								/>
+								<img src={tournevis} alt="tournevis" />
 								<p>réparation</p>
 							</div>
 						</div>

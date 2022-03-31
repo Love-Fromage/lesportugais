@@ -40,7 +40,7 @@ const FooterContact = () => {
 							<p>Boucherville, Qc J4B 7J4</p>
 							<p>
 								Téléphone:{" "}
-								<a href="tel:5145753009">514-575-3009</a>
+								<a href="tel:5145753009">(514) 575-3009</a>
 							</p>
 						</div>
 						<div className="suivez-nous-footer">
@@ -55,7 +55,7 @@ const FooterContact = () => {
 					</div>
 					<div className="copyright-footer">
 						<a href="https://blackduckagency.com">
-							© 2020 par Black Duck Agency
+							© 2022 par Black Duck Agency
 						</a>
 					</div>
 				</footer>
@@ -86,7 +86,7 @@ const FooterContact = () => {
 							<p>Boucherville, Qc J4B 7J4</p>
 							<p>
 								Téléphone:{" "}
-								<a href="tel:5145753009">514-575-3009</a>
+								<a href="tel:5145753009">(514) 575-3009</a>
 							</p>
 						</div>
 						<div className="suivez-nous-footer">
@@ -102,7 +102,7 @@ const FooterContact = () => {
 					</div>
 					<div className="copyright-footer">
 						<a href="https://blackduckagency.com">
-							© 2020 par Black Duck Agency
+							© 2022 par Black Duck Agency
 						</a>
 					</div>
 				</footer>

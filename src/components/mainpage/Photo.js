@@ -1,12 +1,12 @@
-import image1 from "../../images/IMG_0239-2.jpg";
-import image2 from "../../images/IMG_0089-2.jpg";
-import image3 from "../../images/IMG_0215-2.jpg";
-import image4 from "../../images/IMG_0140-2.jpg";
-import image5 from "../../images/IMG_0905-2.jpg";
-import image6 from "../../images/IMG_0186-2.jpg";
-import image7 from "../../images/IMG_0957-2.jpg";
-import image8 from "../../images/IMG_0245-2.jpg";
-import image9 from "../../images/IMG_0903-2.jpg";
+import image1 from "../../images/IMG_0239-2_1.jpg";
+import image2 from "../../images/IMG_0089-2_1.jpg";
+import image3 from "../../images/IMG_0215-2_1.jpg";
+import image4 from "../../images/IMG_0140-2_1.jpg";
+import image5 from "../../images/IMG_0905-2_1.jpg";
+import image6 from "../../images/IMG_0186-2_1.jpg";
+import image7 from "../../images/IMG_0957-2_1.jpg";
+import image8 from "../../images/IMG_0245-2_1.jpg";
+import image9 from "../../images/IMG_0903-2_1.jpg";
 export const photos = [
 	{
 		src: image1,

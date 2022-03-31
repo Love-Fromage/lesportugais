@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Link as Scroller } from "react-scroll";
 import "../../scss/Header.scss";
 import "../../scss/Hamburger.scss";
+import facebook from "../../../images/facebook.webp";
 
 import { useMediaQuery } from "react-responsive";
 
@@ -312,12 +313,9 @@ const Header = (props) => {
 			{isDesktopOrLaptop && (
 				<>
 					<div className="cont-socials-d">
-						<a href="tel:5145753009">514-575-3009</a>
+						<a href="tel:5145753009">(514) 575-3009</a>
 						<a href="https://www.facebook.com/paysagistelesportugais/">
-							<img
-								src="https://static.wixstatic.com/media/4057345bcf57474b96976284050c00df.png/v1/fill/w_27,h_27,al_c,usm_0.66_1.00_0.01,enc_auto/4057345bcf57474b96976284050c00df.png"
-								alt=""
-							/>
+							<img src={facebook} alt="" />
 						</a>
 					</div>
 					<div className="cont-nav-droit-d">
